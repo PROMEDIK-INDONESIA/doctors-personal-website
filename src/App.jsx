@@ -64,9 +64,17 @@ function App() {
     <div>
       <>
         <DoctorSideBar isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className={`flex-1 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-64" : "translate-x-0"
-          }`}>
-          <DoctorHeader isOpen={isOpen} setIsOpen={setIsOpen} />
+        <DoctorHeader
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          className={`fixed top-0 inset-x-0 w-full h-16 bg-white transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-64" : "translate-x-0"}`}
+
+        />
+        <div
+          // className={`flex-1 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-64" : "translate-x-0"
+          //   }`}
+          className={`relative flex-1 transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-64" : "translate-x-0"}`}
+        >
           {/* <div
           className={`transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-64" : "translate-x-0"}`}
         > */}

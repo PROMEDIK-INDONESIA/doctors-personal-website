@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SidebarMenu from './DoctorSideBar';
+import DokterLisaLogoBlack from '../assets/dokter-lisa-name-transparent.png'
+import DokterLisaLogoWhite from '../assets/dokter-lisa-name-transparent-white.png'
 
 export default function DoctorHeader({ setIsOpen, isOpen }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,7 +55,8 @@ export default function DoctorHeader({ setIsOpen, isOpen }) {
             <div className='w-full flex justify-self-center items-center max-w-35'>
               <img
                 className='w-full max-w-35 mt-3'
-                src={`/src/assets/dokter-lisa-name-${isScrolled ? 'transparent-white' : 'transparent'}.png`}
+                // src={`/src/assets/dokter-lisa-name-${isScrolled ? 'transparent-white' : 'transparent'}.png`}
+                src={isScrolled ? DokterLisaLogoWhite : DokterLisaLogoBlack}
               />
             </div>
             <div className='md:hidden w-full flex items-center justify-end'>

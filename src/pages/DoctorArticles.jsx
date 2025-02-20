@@ -1,4 +1,6 @@
 import React from 'react'
+import ArtikelThumbnail from '../assets/background_doctor.webp'
+
 
 function DoctorArticles() {
   return (
@@ -9,7 +11,7 @@ function DoctorArticles() {
             <div>
               <img
                 className='w-100 h-full md:w-50'
-                src='/src/assets/background_doctor.webp'
+                src={ArtikelThumbnail}
               />
             </div>
             <div className='flex flex-col items-start justify-center md:pl-5'>

@@ -1,4 +1,6 @@
 import React from "react";
+import BannerBackground from '../assets//background_doctor.webp'
+import DokterLisa from '../assets/dokter_lisa.webp'
 
 export default function Banner() {
   return (
@@ -6,11 +8,11 @@ export default function Banner() {
       {/* Background (Person Image) - Acts as background for small screens */}
       <div
         className="flex justify-end absolute inset-0 bg-cover bg-center md:hidden"
-        style={{ backgroundImage: "url('/src/assets/background_doctor.webp')" }}
+        style={{ backgroundImage: `url(${BannerBackground})` }}
       >
         <img
           className=" mt-20 h-auto object-contain relative md:left-0"
-          src='/src/assets/dokter_lisa.webp'
+          src={DokterLisa}
         />
         <div className="absolute inset-0 bg-white/60"></div> {/* White Overlay */}
       </div>
@@ -21,13 +23,13 @@ export default function Banner() {
         <div
           className="hidden md:flex md:justify-center w-full flex-1 h-full bg-auto bg-center aspect-square"
           style={{
-            backgroundImage: "url('/src/assets/background_doctor.webp')",
+            backgroundImage: `url(${BannerBackground})`,
             height: "500px",
           }}
         >
           <img
             className=" mt-20 h-auto object-contain relative md:left-0"
-            src='/src/assets/dokter_lisa.webp'
+            src={DokterLisa}
           />
         </div>
 
