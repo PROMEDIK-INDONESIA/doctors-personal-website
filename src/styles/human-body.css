@@ -1,0 +1,48 @@
+.human-body-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.human-body {
+  /* width: 300px;
+  height: auto; */
+  transform: scale(0.9);
+  /* transform: scale(1.2); */
+  cursor: pointer;
+}
+
+#human-body-svg {
+  background: none !important;
+  /* fill: transparent !important; */
+}
+
+/* .human-body path,
+.human-body rect,
+.human-body circle {
+  transition: fill 0.3s ease;
+} */
+
+/* .human-body path:hover,
+.human-body rect:hover,
+.human-body circle:hover {
+  fill: orange;
+} */
+
+.hover-info {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.human-body path {
+  transition: fill 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.human-body path:hover {
+  fill: lightblue !important; /* Highlight on hover */
+}
+
+.human-body path.selected {
+  fill: red !important; /* Highlight when clicked */
+}
