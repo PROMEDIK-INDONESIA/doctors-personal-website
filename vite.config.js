@@ -9,4 +9,5 @@ export default defineConfig({
     svgr(),
     tailwindcss(),
   ], // Add SVGR to Vite plugins
+  base: "/doctors-personal-website/", // 👈 Replace this with your repo name!
 });
