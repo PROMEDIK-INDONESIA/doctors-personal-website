@@ -1,5 +1,14 @@
-<script>
-  var path = window.location.pathname;
-  var newUrl = window.location.origin + "/doctors-personal-website/" + path;
-  window.location.replace(newUrl);
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="refresh" content="0; URL='/'" />
+  <script>
+    var path = window.location.pathname.replace("/doctors-personal-website", ""); 
+    var newUrl = window.location.origin + "/doctors-personal-website/#" + path;
+    window.location.replace(newUrl);
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
