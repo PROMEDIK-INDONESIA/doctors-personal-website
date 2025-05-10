@@ -1,0 +1,35 @@
+<svg
+  version="1.1"
+  id="human-body"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 400 800"
+>
+  <!-- Head -->
+  <circle id="head" cx="200" cy="60" r="50" fill="gray" />
+
+  <!-- Neck -->
+  <path id="neck" d="M180,110 Q200,130 220,110 L220,140 H180 Z" fill="gray" />
+
+  <!-- Torso with Curves -->
+  <path
+    id="torso"
+    d="M140,140 Q160,180 160,220 V320 Q160,340 180,360 H220 Q240,340 240,320 V220 Q240,180 260,140 Z"
+    fill="gray"
+  />
+
+  <!-- Left Arm -->
+  <path id="left-arm" d="M90,150 Q80,200 90,250 T90,310" fill="gray" />
+  <circle id="left-hand" cx="90" cy="320" r="20" fill="gray" />
+
+  <!-- Right Arm -->
+  <path id="right-arm" d="M310,150 Q320,200 310,250 T310,310" fill="gray" />
+  <circle id="right-hand" cx="310" cy="320" r="20" fill="gray" />
+
+  <!-- Left Leg -->
+  <path id="left-leg" d="M150,360 Q130,480 150,560 T170,580" fill="gray" />
+  <circle id="left-foot" cx="170" cy="590" r="25" fill="gray" />
+
+  <!-- Right Leg -->
+  <path id="right-leg" d="M250,360 Q270,480 250,560 T230,580" fill="gray" />
+  <circle id="right-foot" cx="230" cy="590" r="25" fill="gray" />
+</svg>
